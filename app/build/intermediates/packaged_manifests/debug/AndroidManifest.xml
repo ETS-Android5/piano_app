@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="25"
-        android:targetSdkVersion="27" />
+        android:targetSdkVersion="31" />
 
     <application
         android:allowBackup="true"
@@ -22,6 +22,7 @@
         <activity
             android:name="com.example.pianoapp.MainActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
             android:screenOrientation="landscape" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -43,10 +44,6 @@
                 android:name="androidx.lifecycle.ProcessLifecycleInitializer"
                 android:value="androidx.startup" />
         </provider>
-
-        <meta-data
-            android:name="android.arch.lifecycle.VERSION"
-            android:value="27.0.0-SNAPSHOT" />
     </application>
 
 </manifest>
